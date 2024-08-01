@@ -1,1 +1,14 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
+{
+    "version": "2",
+    "name": "restfull-finding-house-api",
+    "builds": [
+        {
+            "src": "./api/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "./api/index.js"
+    }]
+}
