@@ -18,7 +18,7 @@ mongoose
     console.log(err);
   });
 const __dirname = path.resolve()
-export const app = express();
+const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
